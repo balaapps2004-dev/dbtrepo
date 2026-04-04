@@ -1,0 +1,1 @@
+select customer_id, concat(first_name,'_',last_name) as cust_name from {{ source('s1', 'customers') }}
