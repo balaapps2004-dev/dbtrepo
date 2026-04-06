@@ -6,3 +6,8 @@ sources:
       - name: orders
       - name: customers
       - name: payment
+  - name: s2
+    database: dev_db
+    schema: dev_Schema
+    tables:
+      - name: t_tickets
