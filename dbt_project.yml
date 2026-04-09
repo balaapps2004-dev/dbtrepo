@@ -36,6 +36,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
+  +pre-hook: 
+    - "insert into bronze.t_audit(audit_type,model_name) values('Start','{{ this.name }}')"
+  +post-hook: 
+    - "insert into bronze.t_audit(audit_type,model_name) values('End','{{ this.name }}')"    
   my_new_project:
     # Applies to all files under models/example/
     example:

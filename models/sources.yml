@@ -6,6 +6,7 @@ sources:
       - name: orders
       - name: customers
       - name: payment
+      - name: t_cust_info
   - name: s2
     database: dev_db
     schema: dev_Schema

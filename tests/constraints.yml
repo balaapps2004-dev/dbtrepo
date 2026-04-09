@@ -19,3 +19,8 @@ models:
               arguments:
                 to: ref('t_customers')
                 field: customer_id
+      - name: status
+        tests:  
+          - accepted_values:
+              arguments:          
+                values: ['placed','returned','return_pending','shipped','completed']              
