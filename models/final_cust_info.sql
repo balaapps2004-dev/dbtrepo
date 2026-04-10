@@ -1,4 +1,4 @@
-select * from {{ ref('eph_customers') }},
+select * from {{ ref('eph_customers') }} as customers,
 orders as (
 select
 order_id as order_id,

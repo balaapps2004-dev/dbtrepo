@@ -3,4 +3,4 @@
         materialized='ephemeral'
     )
 }}
-select * from {{ source('s1', 'customers') }}
+select * from dev_Db.bronze.customers

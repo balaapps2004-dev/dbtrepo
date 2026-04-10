@@ -1,1 +1,0 @@
-select c_custkey,c_name,{{umcr_segment('c_mktsegment')}} from {{ source('s1', 't_cust_info') }}
