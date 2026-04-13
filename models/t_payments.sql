@@ -1,1 +1,1 @@
-select * from {{ source('s1', 'payment') }}
+select id,{{ mcr_convert_to_dollars('amount') }} from {{ source('s1', 'payment') }}
